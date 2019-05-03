@@ -1,5 +1,6 @@
 try:
-    file = open("file.txt")
+    with open("file.txt") as file:
+        print("file opened")
     age = int(input("Age: "))
     #xfactor = age / 0
 except (ValueError, ZeroDivisionError) as ex:
