@@ -7,6 +7,9 @@ class Point:
         self.x = x
         self.y = y
 
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+
     @classmethod
     def zero(cls):
         return cls(0, 0)
@@ -16,10 +19,5 @@ class Point:
 
 
 point = Point(1, 2)
-point.draw()
-print(point.x)
-print(Point.default_color)
-print(point.default_color)
 
-p2 = Point.zero()
-p2.draw()
+print(point)
