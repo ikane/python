@@ -7,6 +7,10 @@ class Point:
         self.x = x
         self.y = y
 
+    @classmethod
+    def zero(cls):
+        return cls(0, 0)
+
     def draw(self):
         print(f"Point({self.x}, {self.y})")
 
@@ -16,3 +20,6 @@ point.draw()
 print(point.x)
 print(Point.default_color)
 print(point.default_color)
+
+p2 = Point.zero()
+p2.draw()
