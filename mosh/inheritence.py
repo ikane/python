@@ -1,8 +1,11 @@
+from abc import ABC, abstractmethod
+
+
 class InvalidOperation(Exception):
     pass
 
 
-class Stream:
+class Stream(ABC):
     def __init__(self):
         self.opened = False
 
@@ -16,6 +19,10 @@ class Stream:
             raise InvalidOperation("Stream is already closed")
         self.opened = False
 
+    @abstractmethod
+    def read(self):
+        pass
+
 
 class FileStream(Stream):
     def read(self):
@@ -27,6 +34,15 @@ class NetworkStream(Stream):
         print("Read file from Network")
 
 
+class MemoryStream(Stream):
+    def read(self):
+        print("Read file from Memory")
+
+
 f = FileStream()
 f.read()
 print(isinstance(f, FileStream))
+
+#s = Stream()
+m = MemoryStream()
+m.read()
