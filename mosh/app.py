@@ -1,4 +1,4 @@
-from ecommerce import sales
+from ecommerce.shopping import sales
 
 #import sales
 import sys
