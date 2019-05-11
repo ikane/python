@@ -18,3 +18,6 @@ sales.calc_tax()
 
 path = Path("ecommerce/__init__.py")
 print(path.exists())
+
+path = path.with_suffix(".txt")
+print(path)
