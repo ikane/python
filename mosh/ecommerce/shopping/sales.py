@@ -1,4 +1,4 @@
-#from ecommerce.customer import contact
+from ecommerce.customer import contact
 
 # from ..customer import contact
 
