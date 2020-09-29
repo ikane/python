@@ -1,0 +1,32 @@
+[
+  {
+    "artist": "Hilda Barnes",
+    "name": "Almond Dutch",
+    "priceInUsd": 161,
+    "publisher": "LETPRO"
+  },
+  {
+    "artist": "Romero Allen",
+    "name": "Atomic Dim",
+    "priceInUsd": 392,
+    "publisher": "QUAREX"
+  },
+  {
+    "artist": "Hall Ramos",
+    "name": "Carmine Drab",
+    "priceInUsd": 370,
+    "publisher": "BRAINQUIL"
+  },
+  {
+    "artist": "Chang Vance",
+    "priceInUsd": 324,
+    "publisher": "DIGIAL",
+    "name": "Aureolin Dodger"
+  },
+  {
+    "artist": "May Tanner",
+    "name": "Cadmium Cultured",
+    "priceInUsd": 146,
+    "publisher": "CHORIZON"
+  }
+]
